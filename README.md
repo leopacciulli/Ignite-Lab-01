@@ -11,3 +11,12 @@ In this first class was created the back-end microservices base and the front-en
 <br>
 <br>
 <b>Tools:</b> NestJS, Docker, Prisma, Auth0, GraphQL.
+
+<br>
+<br>
+
+### 📝 Second class - GraphQL and back-end functionalities
+In this second class was created the GraphQL structure and all the back-end, including the GraphQL's Resolvers, Queries, Models and Inputs for purchases service and classroom functionality
+<br>
+<br>
+<b>Tools:</b> GraphQL.
