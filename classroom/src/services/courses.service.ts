@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { PrismaService } from '../database/prisma/prisma.service';
 import slugify from 'slugify';
+import { PrismaService } from '../database/prisma/prisma.service';
 
 interface CreateCourseParams {
   title: string;
@@ -32,7 +32,7 @@ export class CoursesService {
     });
 
     if (courseAlreadyExists) {
-      throw new Error('Course already exist.');
+      throw new Error('Course already exists');
     }
 
     return this.prisma.course.create({

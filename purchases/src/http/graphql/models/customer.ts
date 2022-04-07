@@ -7,5 +7,5 @@ export class Customer {
   id: string;
 
   @Field(() => [Purchase])
-  purchases: Purchase;
+  purchases: Purchase[];
 }

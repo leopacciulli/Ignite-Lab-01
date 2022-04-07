@@ -1,4 +1,5 @@
 import { Injectable } from '@nestjs/common';
+
 import { PrismaService } from '../database/prisma/prisma.service';
 
 interface CreatePurchaseParams {
@@ -37,7 +38,7 @@ export class PurchasesService {
     });
 
     if (!product) {
-      throw new Error('Product not found');
+      throw new Error('Product not found.');
     }
 
     return await this.prisma.purchase.create({

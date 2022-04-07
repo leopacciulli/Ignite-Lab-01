@@ -20,7 +20,7 @@ export class Purchase {
   @Field(() => PurchaseStatus)
   status: PurchaseStatus;
 
-  @Field()
+  @Field(() => Date)
   createdAt: Date;
 
   @Field(() => Product)

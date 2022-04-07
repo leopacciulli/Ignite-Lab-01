@@ -1,9 +1,10 @@
-// import { UseGuards } from '@nestjs/common';
+import { UseGuards } from '@nestjs/common';
 import { Parent, Query, ResolveField, Resolver } from '@nestjs/graphql';
-import { AuthUser, CurrenUser } from 'src/http/auth/current-user';
-import { CustomersService } from 'src/services/customers.service';
-import { PurchasesService } from 'src/services/purchases.service';
-// import { AuthorizationGuard } from 'src/http/auth/authorization.guard';
+import { CustomersService } from '../../../services/customers.service';
+import { PurchasesService } from '../../../services/purchases.service';
+
+import { AuthorizationGuard } from '../../auth/authorization.guard';
+import { AuthUser, CurrentUser } from '../../auth/current-user';
 import { Customer } from '../models/customer';
 
 @Resolver(() => Customer)
@@ -13,9 +14,9 @@ export class CustomersResolver {
     private purchasesService: PurchasesService,
   ) {}
 
-  // @UseGuards(AuthorizationGuard)
+  @UseGuards(AuthorizationGuard)
   @Query(() => Customer)
-  me(@CurrenUser() user: AuthUser) {
+  me(@CurrentUser() user: AuthUser) {
     return this.customersService.getCustomerByAuthUserId(user.sub);
   }
 
