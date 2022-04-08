@@ -20,3 +20,12 @@ In this second class was created the GraphQL structure and all the back-end, inc
 <br>
 <br>
 <b>Tools:</b> GraphQL.
+
+<br>
+<br>
+
+### 📝 Third class - Integrating services with apache kafka
+In this third class we integrated our services with apache kafka and we understood how the Apollo Federation will help us with different schemas on GraphQL.
+<br>
+<br>
+<b>Tools:</b> Apache Kafka and Apollo Federation.

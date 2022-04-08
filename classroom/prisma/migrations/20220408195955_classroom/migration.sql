@@ -1,6 +1,7 @@
 -- CreateTable
 CREATE TABLE "Student" (
     "id" TEXT NOT NULL,
+    "authUserId" TEXT,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
 
@@ -29,6 +30,12 @@ CREATE TABLE "Enrollment" (
 
     CONSTRAINT "Enrollment_pkey" PRIMARY KEY ("id")
 );
+
+-- CreateIndex
+CREATE UNIQUE INDEX "Student_authUserId_key" ON "Student"("authUserId");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "Course_slug_key" ON "Course"("slug");
 
 -- AddForeignKey
 ALTER TABLE "Enrollment" ADD CONSTRAINT "Enrollment_studentId_fkey" FOREIGN KEY ("studentId") REFERENCES "Student"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
