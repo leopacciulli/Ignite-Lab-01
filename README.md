@@ -29,3 +29,12 @@ In this third class we integrated our services with apache kafka and we understo
 <br>
 <br>
 <b>Tools:</b> Apache Kafka and Apollo Federation.
+
+<br>
+<br>
+
+### 📝 Fourth class - Integrating front-end with back-end
+In this class we will integrated our front-end with our back-end services using Apollo Client and GraphQL CodeGen. Also, learned how to perform GraphQL requests from both client-side and server-side and also how to authenticate requests by building a proxy for HTTP requests inside Next.js.
+<br>
+<br>
+<b>Tools:</b> Apollo Client and GraphQL CodeGen
