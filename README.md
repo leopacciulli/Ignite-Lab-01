@@ -1,8 +1,13 @@
 <h1 align="center">
-🚧 In Development 🚧 
 <br>
 Ignite Lab - Rocketseat 🚀
 </h1>
+
+<br>
+
+<div align="center">
+<img src="./web/src/assets/bg.png" width="600">
+</div>
 
 <br>
 
@@ -38,3 +43,12 @@ In this class we will integrated our front-end with our back-end services using 
 <br>
 <br>
 <b>Tools:</b> Apollo Client and GraphQL CodeGen
+
+<br>
+<br>
+
+### 📝 Fifth class - Finishing the front-end integration
+Finish to integrate the front-end using Queries and Mutations
+<br>
+<br>
+<b>Tools:</b> GraphQL
